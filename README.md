@@ -31,6 +31,8 @@ Or install it yourself as:
 
 
 ```ruby
+require 'king_of_time'
+
 king_of_time = KingOfTime.new({
   timerecorder_id: 1111111111,
   employee_id: 2222222222,
