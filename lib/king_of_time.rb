@@ -47,13 +47,15 @@ class KingOfTime
       end_break: 4
     }
 
+    now_with_time_zone = Time.now.getlocal('+09:00')
+
     params = @param.merge({
       recording_type_code: codes[type],
       device_type_code:4,
-      recording_time: Time.now.strftime('%Y%m%d%H%M%S'),
-      now: Time.now.to_i,
+      recording_time: now_with_time_zone.strftime('%Y%m%d%H%M%S'),
+      now: now_with_time_zone.to_i,
       kot_url: 'https://s3.kingtime.jp/gateway/gaegateway?page_id=/gaegateway/',
-      log: Time.now.strftime('%m/%d %H:%M') + ' ' + messages[type] + ' ' + @param[:name]
+      log: now_with_time_zone.strftime('%m/%d %H:%M') + ' ' + messages[type] + ' ' + @param[:name]
       # input_password: '', # not necessary
     })
 
