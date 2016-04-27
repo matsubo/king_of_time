@@ -7,6 +7,7 @@ Ruby API library for daily check-in/check-out operation.
 [![Build Status](https://travis-ci.org/matsubo/king_of_time.svg?branch=master)](https://travis-ci.org/matsubo/king_of_time)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/gem/v/vcr.svg?style=flat-square)](https://rubygems.org/gems/king_of_time)
+[![Code Climate](https://codeclimate.com/github/matsubo/king_of_time/badges/gpa.svg)](https://codeclimate.com/github/matsubo/king_of_time)
 
 
 
