@@ -57,6 +57,7 @@ king_of_time.check_out
 ## Future work
 
 - I18n
+- Timezone (Currently fixed with +9:00)
 
 ## Development
 
