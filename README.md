@@ -4,6 +4,9 @@ Ruby API library for daily check-in/check-out operation.
 
 - http://www.kingtime.jp/
 
+[![Build Status](https://travis-ci.org/matsubo/king_of_time.svg?branch=master)](https://travis-ci.org/matsubo/king_of_time)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
