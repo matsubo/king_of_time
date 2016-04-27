@@ -1,10 +1,13 @@
-# KingOfTime
+# King Of Time
 
 Ruby API library for daily check-in/check-out operation.
 
 - http://www.kingtime.jp/
 
 [![Build Status](https://travis-ci.org/matsubo/king_of_time.svg?branch=master)](https://travis-ci.org/matsubo/king_of_time)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/gem/v/vcr.svg?style=flat-square)](https://rubygems.org/gems/king_of_time)
+
 
 
 ## Installation
@@ -26,7 +29,7 @@ Or install it yourself as:
 ## Usage
 
 
-```
+```ruby
 king_of_time = KingOfTime.new({
   timerecorder_id: 1111111111,
   employee_id: 2222222222,

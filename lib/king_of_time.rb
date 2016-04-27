@@ -1,9 +1,10 @@
 require "king_of_time/version"
 require 'rest-client'
 
+# Main class
 class KingOfTime
 
-  END_POINT = 'https://kingoftime-recorder.appspot.com/ajax?function=record_timestamp_and_log'
+  END_POINT = 'https://kingoftime-recorder.appspot.com/ajax?function=record_timestamp_and_log'.freeze
 
   def initialize(name:, employee_id:, timerecorder_id:)
     @param = {}
@@ -36,14 +37,14 @@ class KingOfTime
       checkin: "<font color='#0000FF'>Check-in</font>",
       checkout: "<font color='#FF0000'>Check-out</font>",
       start_break:  "<font color='#00FF00'>Start break</font>",
-      end_break: "<font color='#FF00FF'>End-break</font>",
+      end_break: "<font color='#FF00FF'>End-break</font>"
     }
 
     codes = {
       checkin: 1,
       checkout: 2,
       start_break: 3,
-      end_break: 4,
+      end_break: 4
     }
 
     params = @param.merge({
@@ -52,7 +53,7 @@ class KingOfTime
       recording_time: Time.now.strftime('%Y%m%d%H%M%S'),
       now: Time.now.to_i,
       kot_url: 'https://s3.kingtime.jp/gateway/gaegateway?page_id=/gaegateway/',
-      log: Time.now.strftime('%m/%d %H:%M') + ' ' + messages[type] + ' ' + @param[:name],
+      log: Time.now.strftime('%m/%d %H:%M') + ' ' + messages[type] + ' ' + @param[:name]
       # input_password: '', # not necessary
     })
 
@@ -60,13 +61,12 @@ class KingOfTime
       'Accept' => 'application/json, text/javascript, */*; q=0.01',
       'Content-Type' => 'application/x-www-form-urlencoded',
       'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36',
-      'X-Requested-With' => 'XMLHttpRequest',
+      'X-Requested-With' => 'XMLHttpRequest'
     }
 
     RestClient.post END_POINT, params, headers
 
-
   end
 
-
 end
+
