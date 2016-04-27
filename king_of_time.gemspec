@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{King of Time HTTP client.}
   spec.description   = %q{King of Time HTTP client.}
   spec.homepage      = "https://github.com/matsubo/king_of_time"
+  spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
