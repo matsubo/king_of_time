@@ -25,6 +25,7 @@ require 'vcr'
 VCR.configure do |config|
   config.cassette_library_dir = "fixtures/vcr_cassettes"
   config.hook_into :webmock # or :fakeweb
+  config.ignore_hosts 'codeclimate.com'
 end
 
 if ENV['CIRCLE_ARTIFACTS']
@@ -32,10 +33,7 @@ if ENV['CIRCLE_ARTIFACTS']
   SimpleCov.coverage_dir(dir)
 end
 
-SimpleCov.formatters = [
-  SimpleCov::Formatter::HTMLFormatter
-]
-
+SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
 SimpleCov.profiles.define 'gem' do
   add_filter '/spec/'
 end
