@@ -42,6 +42,12 @@ king_of_time = KingOfTime.new({
 # check in
 king_of_time.check_in
 
+# start break
+king_of_time.start_break
+
+# end break
+king_of_time.end_break
+
 # check out
 king_of_time.check_out
 ```
