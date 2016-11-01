@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - 'vendor/**/*'
+    - 'bin/**/*'
   DisplayCopNames: true
   TargetRubyVersion: 2.1
 
@@ -89,9 +90,6 @@ Style/ConstantName:
   Enabled: false
 
 Style/DefWithParentheses:
-  Enabled: false
-
-Style/DeprecatedHashMethods:
   Enabled: false
 
 Style/Documentation:

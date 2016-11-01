@@ -7,5 +7,4 @@ begin
     spec.pattern = 'spec/**/*_spec.rb'
     spec.rspec_opts = ['-cfp']
   end
-rescue LoadError => e
 end
