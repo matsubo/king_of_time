@@ -7,7 +7,8 @@ describe KingOfTime do
       {
         name: '松倉 友樹',
         employee_id: 2222222222,
-        timerecorder_id: 1111111111
+        timerecorder_id: 1111111111,
+        password: 'password',
       }
     )
   end

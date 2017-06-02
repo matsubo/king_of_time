@@ -37,6 +37,7 @@ king_of_time = KingOfTime.new({
   timerecorder_id: 1111111111,
   employee_id: 2222222222,
   name: '松倉 友樹',
+  password: 'your secret password',
 })
 
 # check in

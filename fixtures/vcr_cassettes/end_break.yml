@@ -5,41 +5,44 @@ http_interactions:
     uri: https://kingoftime-recorder.appspot.com/ajax?function=record_timestamp_and_log
     body:
       encoding: UTF-8
-      string: name=%E6%9D%BE%E5%80%89%20%E5%8F%8B%E6%A8%B9&employee_id=2222222222&employee_timerecorder_id=1111111111&timerecorder_id=1111111111&recording_type_code=4&device_type_code=4&recording_time=20160426225317&now=1461678797&kot_url=https%3A%2F%2Fs3.kingtime.jp%2Fgateway%2Fgaegateway%3Fpage_id%3D%2Fgaegateway%2F&log=04%2F26%2022%3A53%20%3Cfont%20color%3D'%23FF00FF'%3EEnd-break%3C%2Ffont%3E%20%E6%9D%BE%E5%80%89%20%E5%8F%8B%E6%A8%B9
+      string: name=%E6%9D%BE%E5%80%89+%E5%8F%8B%E6%A8%B9&employee_id=1300038122&employee_timerecorder_id=500000130&timerecorder_id=500000130&recording_type_code=4&recording_time=20170603002915&now=1496417355&kot_url=https%3A%2F%2Fs3.kingtime.jp%2Fgateway%2Fgaegateway%3Fpage_id%3D%2Fgaegateway%2F&log=06%2F03+00%3A29+%3Cfont+color%3D%27%23FF00FF%27%3EEnd-break%3C%2Ffont%3E+%E6%9D%BE%E5%80%89+%E5%8F%8B%E6%A8%B9&time_zone=Asia%2FTokyo&input_password=password
     headers:
       Accept:
       - application/json, text/javascript, */*; q=0.01
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
       Content-Type:
       - application/x-www-form-urlencoded
-      User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/50.0.2661.75 Safari/537.36
       X-Requested-With:
       - XMLHttpRequest
+      Origin:
+      - https://kingoftime-recorder.appspot.com
       Content-Length:
-      - '426'
+      - '446'
   response:
     status:
       code: 200
       message: OK
     headers:
+      X-Cloud-Trace-Context:
+      - 31b281e3ac700a3735815fa849f7a2d6
       Date:
-      - Tue, 26 Apr 2016 13:53:18 GMT
+      - Fri, 02 Jun 2017 15:29:16 GMT
       Content-Type:
       - text/html
       Server:
       - Google Frontend
       Content-Length:
-      - '20'
-      Alternate-Protocol:
-      - 443:quic
+      - '83'
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="32,31,30,29,28,27,26,25"
+      - quic=":443"; ma=2592000; v="38,37,36,35"
     body:
-      encoding: UTF-8
-      string: result=OK&time=22:53
+      encoding: ASCII-8BIT
+      string: !binary |-
+        cmVzdWx0PU9LJnRpbWU9MDA6MjkmbG9nU3RyaW5nPTA2LzAzIDAwOjI5IDxmb250IGNvbG9yPScjRkYwMEZGJz7kvJHntYI8L2ZvbnQ+IG51bGw=
     http_version: 
-  recorded_at: Tue, 26 Apr 2016 13:53:18 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 02 Jun 2017 15:29:16 GMT
+recorded_with: VCR 3.0.3
