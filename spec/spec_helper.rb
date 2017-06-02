@@ -43,9 +43,6 @@ end
 SimpleCov.start 'gem'
 
 
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
-
 
 require 'king_of_time'
 
