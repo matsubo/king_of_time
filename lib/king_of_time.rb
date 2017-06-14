@@ -8,9 +8,9 @@ class KingOfTime
 
   def initialize(name:, employee_id:, timerecorder_id:, password:)
     @param = {}
-    @param[:name] = name
+    @param[:employee_name] = name
     @param[:employee_id] = employee_id
-    @param[:timerecorder_id] = @param[:employee_timerecorder_id] = timerecorder_id
+    @param[:employee_timerecorder_id] = @param[:employee_timerecorder_id] = timerecorder_id
     @param[:password] = password
   end
 
