@@ -55,7 +55,7 @@ class KingOfTime
       recording_time: now_with_time_zone.strftime('%Y%m%d%H%M%S'),
       now: now_with_time_zone.to_i,
       kot_url: 'https://s3.kingtime.jp/gateway/gaegateway?page_id=/gaegateway/',
-      log: now_with_time_zone.strftime('%m/%d %H:%M') + ' ' + messages[type] + ' ' + @param[:name],
+      log: now_with_time_zone.strftime('%m/%d %H:%M') + ' ' + messages[type] + ' ' + @param[:employee_name],
       time_zone: 'Asia/Tokyo',
       input_password: @param[:password],
     })
