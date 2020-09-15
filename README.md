@@ -9,6 +9,9 @@ Ruby API library for daily check-in/check-out operation.
 [![Version](https://img.shields.io/gem/v/vcr.svg?style=flat-square)](https://rubygems.org/gems/king_of_time)
 [![Code Climate](https://codeclimate.com/github/matsubo/king_of_time/badges/gpa.svg)](https://codeclimate.com/github/matsubo/king_of_time)
 
+## Screenshot
+
+<img width="637" alt="Screenshot_2017_02_19_1_10" src="https://user-images.githubusercontent.com/98103/93198933-9f648780-f788-11ea-82af-409641023aba.png">
 
 
 ## Installation
